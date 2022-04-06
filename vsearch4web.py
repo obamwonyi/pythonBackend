@@ -1,5 +1,4 @@
 #importing the flask method
-from django.shortcuts import redirect
 from flask import Flask,render_template,request
 #importing the search4letters method
 from vsearch import search4letters
@@ -7,11 +6,8 @@ from vsearch import search4letters
 #instantiating the Flask class  
 app = Flask(__name__)
 
-@app.route('/')
-# the hello function will be returning a string 
-def hello() -> '302' : 
-    return redirect('/entry')
 
+# the hello function will be returning a string 
 @app.route('/search4',methods = ['POST'])
 
 #function with the type hint of string 
@@ -25,12 +21,15 @@ def do_search() -> str :
     return render_template('results.html',the_phrase = phrase,
             the_letters = letters,
             the_title = title,
-            the_results =results,)
+            the_results =results)
 
-
+#making the root directory / kind of full through to entry
+@app.route('/')
 @app.route('/entry')
 def entry_page() :
     return render_template('entry.html',the_title ="Welcome to seach4letters on the web!")
 
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
+    
