@@ -1,0 +1,6 @@
+ImmutableMultiDict([('phrase', 'the first'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0|{'i', 'e'}
+ImmutableMultiDict([('phrase', 'the second'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0|{'o', 'e'}
+ImmutableMultiDict([('phrase', 'the third'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0|{'i', 'e'}
+ImmutableMultiDict([('phrase', 'one'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0|{'o', 'e'}
+ImmutableMultiDict([('phrase', 'two'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0|{'o'}
+ImmutableMultiDict([('phrase', 'three'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0|{'e'}
